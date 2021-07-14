@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Combining Selectors</title>
+	<style>
+		/*all elememts with class="highlight"*/
+		.highlight{
+			background-color: green;
+		}
+
+		/*all p elements with class="highlight"*/
+		p.highlight{
+			font-style: italic;
+			font-size: 30px;
+		}
+
+		/*all elements with class="highlight" as well as class="mainpoint"*/
+		.mainpoint.highlight{
+			color: darkred;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="highlight">Combining Selectors</h1>
+	<p> Lorem Ipsum has been the industry's standard dummy 		text ever since the 1500s, when an unknown printer 		took a galley of type and scrambled it to make a 		type specimen book. It has survived not only five 		centuries, but also the leap into electronic 			typesetting, remaining essentially unchanged.
+	</p>
+	<p class="highlight"> Observe this carefully</p>
+	<div class="mainpoint highlight"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+
+</body>
+</html>

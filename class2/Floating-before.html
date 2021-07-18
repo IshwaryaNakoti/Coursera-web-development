@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Floating Elements</title>
+	<style>
+		div{
+			background-color: #00FFFF;
+		}
+		p{
+			width: 60px;
+			height: 60px;
+			border: 1px solid black;
+			/*To apply the floating action on all the blocks...*/
+			float: left;
+			margin-right: 10px;
+		}
+		#p1{
+			background-color: #A52A2A;
+		}
+		#p2{
+			background-color: #DEB887;
+		}
+		#p3{
+			background-color: #5F9EA0;
+			/*by saying clear: left ; here there will be nothing to the left of block 3*/
+			clear: left;
+		}
+		#p4{
+			background-color: #FF7F50;
+		
+		}
+		section{
+			clear: left;
+		}
+	</style>
+
+</head>
+<body>
+	<h1> Floating Elements</h1>
+	<div> 
+		<p id="p1">Hello I'm block p1</p>
+		<p id="p2">Hello I'm block p2</p>
+		<p id="p3">Hello I'm block p3</p>
+		<p id="p4">Hello I'm block p4</p>
+		<section>This is the regular content continuing after the paragraph boxes.
+		</section>
+	</div>
+</body>
+</html>

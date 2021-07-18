@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Box Model-2</title>
+	<style>
+	/*border-box doesnot support inheritance. therfore it is waste to define it in the parent element*/
+	/* In order to specify border-box through out your html page, we have star(*) selector which overcomes this problem*/
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		/* this will overrride the user agent stylesheet definitions*/
+		/*this implies to all the content in the html page*/
+	}
+		body{
+			background-color: lightblue;
+			/*padding: 0;
+			margin: 0;....adjusting the marginx of h1*/
+		}
+		#box{
+			background-color: blueviolet;
+			padding: 10px 10px 10px 10px;
+			border: 5px solid black;
+			/*margin: 40px;40px margin is set now*/
+			margin-top: 20px;
+			width: 300px;
+			height: 50px;
+			/*box-sizing: border-box;*/
+			font-size: 120%;
+			/*overflow: hidden;
+			overflow: visible;
+			overflow: scroll;
+			*/
+			overflow: auto;
+			/*we use overflow to avoid collision of contents*/
+		}
+		#content{
+			background-color: #90EE90; /*green*/
+		}
+		h1{
+			margin-bottom: 30px;
+			/* we have set up the margin of the h1 as 30px...so if the margin of box is greater than 30px, then this will collapse. otherwie, if the margin of box is less than 30, then the box's margin will collapse*/
+		}
+	</style>
+</head>
+<body>
+	<h1>Box Model-2</h1>
+	<div id="box">
+		<div id="content"> It's 18th July, 2021, 13:46 pm. The weather is dull today. I donno why he is'nt texting...abbah why again am I thinking all these...Lets take it lite and move on! Do not have expectations on anyone. It will ruin your life. :)		</div>
+	</div>
+</body>
+</html>

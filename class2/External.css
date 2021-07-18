@@ -1,6 +1,10 @@
-p{
+p {
 	
-	background-color: grey;
+	background-color: gray;
 	color: red;
 	font-size: 200%;
+}
+h1{
+	text-align: center;
+	text-decoration: underline;
 }
